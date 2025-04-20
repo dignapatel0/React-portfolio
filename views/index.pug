@@ -1,0 +1,51 @@
+extends common/layout
+
+block layout-content
+    section#hero(class="text-center py-5 bg-light")
+            h1 Hello, I'm Digna Patel!
+            p.lead A passionate web developer crafting efficient and interactive digital experiences.
+            a.btn.btn-orange(href="/projects/list") View My Work
+
+    section#about(class="container py-5 text-center")
+        h2 Who Am I?
+        p With a background in operations, I am now immersing myself in the world of web development. My journey is fueled by curiosity and a passion for creating responsive, scalable, and user-friendly web applications as I build my skills in this exciting field.
+        a.btn.btn-orange(href="/experiences/list") My Experience
+
+    section#skills(class="container py-5 bg-dark text-white")
+        h2.text-center My Tech Stack
+        div.row.justify-content-center
+            div.col-md-3.text-center
+                h4 Frontend
+                ul.list-unstyled
+                    li React.js
+                    li JavaScript
+                    li HTML5
+                    li CSS3
+            div.col-md-3.text-center
+                h4 Backend
+                ul.list-unstyled
+                    li Node.js & Express.js
+                    li ASP.NET Core & C#
+                    li MongoDB & SQL Server
+                    li RESTful APIs
+            div.col-md-3.text-center
+                h4 Tools & More
+                ul.list-unstyled
+                    li Git & GitHub
+                    li Figma & UI/UX Basics
+                    li Postman & API Testing
+                    li Agile & Scrum
+
+    section#projects(class="container py-5 text-center")
+        h2 What I Build
+        p I develop engaging web applications that focus on performance, accessibility, and user experience.
+        a.btn.btn-orange(href="/projects/list") Browse My Projects
+
+    section#contact(class="text-center py-5 bg-light")
+        h2 Let's Connect
+        p Have an idea or just want to chat about tech? Reach out, and let's build something amazing!
+        p
+            a.btn.btn-blue(href="https://www.linkedin.com/in/digna-patel-20b017168/" target="_blank") LinkedIn
+            |  
+            a.btn.btn-blue(href="https://github.com/Dignapatel0" target="_blank") GitHub
+

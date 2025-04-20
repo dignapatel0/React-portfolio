@@ -1,0 +1,31 @@
+extends ../common/layout 
+
+block layout-content 
+    h2.text-center.my-4 Add an Experience 
+
+    form(action="/experiences/add/submit", method="POST" class="experience-form")
+        .form-group
+            label(for="title") Title: 
+            input.form-control(type="text" id="title" name="title" placeholder="Web Developer")
+
+        .form-group
+            label(for="company") Company: 
+            input.form-control(type="text" id="company" name="company" placeholder="Microsoft Company")
+
+        .form-group
+            label(for="location") Location: 
+            input.form-control(type="text" id="location" name="location" placeholder="Toronto")
+
+        .form-group
+            label(for="startYear") Start Year:
+            input.form-control(type="number" id="startYear" name="startYear" placeholder="2020")
+
+        .form-group
+            label(for="endYear") End Year: 
+            input.form-control(type="number" id="endYear" name="endYear" placeholder="2025")
+
+        .form-group
+            label(for="description") Description: 
+            textarea.form-control(id="description" name="description" rows="3" placeholder="Developing Web Application")
+
+        button.btn.btn-orange(type="submit") Add Experience

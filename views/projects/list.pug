@@ -1,0 +1,24 @@
+extends ../common/layout
+
+block layout-content
+  h2.text-center.my-4 Projects
+  .add-link.text-center.mb-4
+    a.btn.btn-blue(href="/projects/add") Add Project
+  
+  .experience-content
+    .row
+      each item in project 
+        .col-md-6.mb-4
+          .card.experience-card
+            .card-body
+              h5.card-title.text-primary= item.name
+              h6.card-subtitle.mb-2.text-muted= item.status
+              p.card-text
+                | Timespan: #{item.timespan}
+                br
+                | Technologies Used: #{item.technology}
+              p.card-text.text-dark= item.summary
+              .d-flex.justify-content-between.align-items-center
+                form(action="/projects/delete/submit")
+                  input(type="hidden" name="projId" value=item._id)
+                  button.btn.btn-danger(type="submit") Delete

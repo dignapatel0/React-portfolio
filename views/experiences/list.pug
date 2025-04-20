@@ -1,0 +1,25 @@
+extends ../common/layout
+
+block layout-content
+  h2.text-center.my-4 Job Experience
+  .add-link.text-center.mb-4
+    a.btn.btn-blue(href="/experiences/add") Add Experience
+
+  .experience-content
+    .row
+      each item in experience 
+        .col-md-6.mb-4
+          .card.experience-card
+            .card-body
+              h5.card-title.text-primary= item.title
+              p.card-subtitle.text-muted
+                | Location: #{item.location} 
+                br
+                | 📅 #{item.startYear} - #{item.endYear}
+              p.card-text.text-dark= item.description
+              .d-flex.justify-content-between.align-items-center
+                form(action="/experiences/delete/submit")
+                  input(type="hidden" name="expId" value=item._id)
+                  button.btn.btn-danger(type="submit") Delete
+
+
