@@ -1,12 +1,60 @@
-# React + Vite
+# React Portfolio with Express
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project showcases a portfolio built using React for the front-end and Express for the back-end. It includes live links to both the front-end and back-end applications.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: [React Portfolio](https://React-portfolio.vercel.app)
+- **Backend**: [Node.js web app](https://my-portfolio-express-app.onrender.com/admin/login)
 
-## Expanding the ESLint configuration
+## Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project consists of two parts:
+
+1. **Frontend**: Built using React, this serves as the user-facing part of the portfolio. It displays sections such as About, Experience, Projects, and Skills.
+   
+2. **Backend**: Built with Express, the backend provides an API to manage portfolio data (such as adding experiences, projects, etc.). The admin can log in and manage the content for the portfolio.
+
+### Key Features:
+
+- **Frontend**:
+  - Styled with custom CSS and React components
+  - Dynamic data fetching from the backend API
+  - Sections: About, Experience, Projects, Skills
+
+- **Backend**:
+  - Admin panel for adding/editing portfolio content
+  - API endpoints for managing data (e.g., experiences, projects)
+  - User authentication for admin access
+
+## Technologies Used
+
+- **Frontend**:
+  - React
+  - CSS (Custom Styling)
+  - React Router (if applicable)
+  - React Icons
+
+- **Backend**:
+  - Express.js
+  - MongoDB (or any database used in your backend)
+  - Authentication (JWT or session-based)
+
+## Installation Instructions
+
+1. Clone the repository
+
+   ```bash
+    git clone https://github.com/dignapatel0/React-portfolio
+2. Navigate to project directory
+    ```bash
+    cd React-portfolio
+3. Install dependencies
+    ```bash
+    npm install
+4. Set up environment variables
+    ```bash
+    cp .env.example .env
+5. Start the development server
+    ```bash
+    npm run dev
