@@ -12,9 +12,14 @@ dotenv.config();
 const app = express(); //
 
 // Allow frontend at port 5173 to access this API
-app.use(cors({
-    origin: 'http://localhost:5173',
-    credentials: true
+const allowedOrigins = [
+    'http://localhost:5173',
+    'https://react-portfolio-digna-patel.vercel.app',
+  ];
+  
+  app.use(cors({
+    origin: allowedOrigins,
+    credentials: true,
   }));
   
 // using 8888 port

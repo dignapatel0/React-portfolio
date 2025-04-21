@@ -4,8 +4,18 @@ This project showcases a portfolio built using React for the front-end and Expre
 
 ## Live Demo
 
-- **Frontend**: [React Portfolio](https://react-portfolio-digna-patel.vercel.app/)
-- **Backend**: [Node.js web app](https://my-portfolio-express-app.onrender.com/admin/login)
+- **Backend**: https://my-portfolio-express-app.onrender.com/admin/login
+- **Frontend**: https://react-portfolio-digna-patel.vercel.app
+
+### ⚠️ Important Note
+
+> **Please click the backend link first** to wake up the Render server:
+>
+> 👉 https://my-portfolio-express-app.onrender.com/admin/login
+>
+> After that, open the React portfolio site:
+>
+> 👉 https://react-portfolio-digna-patel.vercel.app
 
 ## Project Overview
 
