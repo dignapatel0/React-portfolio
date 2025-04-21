@@ -1,0 +1,159 @@
+/* Style for the Experience page */
+
+.experience-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.experience-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.experience-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.experience-left,
+.experience-right {
+  width: 50%; /* Equal width */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.experience-left {
+  text-align: left;
+}
+
+.experience-right {
+  text-align: right;
+}
+
+.experience-title-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.experience-company {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.experience-location {
+  font-size: 1rem;
+  color: #666;
+}
+
+.experience-duration {
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 10px;
+}
+
+.experience-description {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.experience-description li {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  list-style: none;
+  position: relative;
+}
+
+.experience-description li::before {
+  content: "•";
+  position: absolute;
+  left: -16px;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .experience-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .experience-header {
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 100%; 
+  }
+
+  .experience-left,
+  .experience-right {
+    width: 100%; 
+    padding: 5px 0;
+    text-align: left; 
+  }
+
+  .experience-title-text,
+  .experience-company,
+  .experience-location,
+  .experience-duration {
+    margin-bottom: 10px;
+  }
+
+  .experience-description li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .experience-card {
+    padding: 16px;
+  }
+
+  .experience-title-text {
+    font-size: 1.4rem;
+  }
+
+  .experience-company {
+    font-size: 1.1rem;
+  }
+
+  .experience-description li {
+    font-size: 0.95rem;
+  }
+}

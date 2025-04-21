@@ -25,14 +25,16 @@ async function initializeProject(){
             status: "In Progress",
             timespan: "Jan 2025 - Present",
             technology: "HTML, CSS, JavaScript",
-            summary: "A fun and engaging game where players pop popcorn to earn points, featuring dynamic animations and a scoring system."
+            summary: "A fun and engaging game where players pop popcorn to earn points, featuring dynamic animations and a scoring system.",
+            URL: "https://github.com/dignapatel0/Useless_Website_Popcorn_Poppers"
         },
         {
             name: "G1 Quiz App",
             status: "Completed",
             timespan: "Oct 2024 - Dec 2024",
             technology: "HTML, CSS, JavaScript",
-            summary: "A quiz application to help users prepare for the Ontario G1 driving test, featuring multiple-choice questions with instant feedback."
+            summary: "A quiz application to help users prepare for the Ontario G1 driving test, featuring multiple-choice questions with instant feedback.",
+            URL: "https://github.com/dignapatel0/G1-quiz-app"
         }
     ];
     await Project.insertMany(projectData);

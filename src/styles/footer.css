@@ -1,0 +1,26 @@
+/* Style for the Footer */
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}

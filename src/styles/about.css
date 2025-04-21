@@ -1,0 +1,94 @@
+/* Style for the About Page */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 6rem;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.about-links a:hover {
+  color: #ffcc00;
+}
+
+/* Responsive Styles */
+  
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 1rem;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    gap: 2rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .about h1 {
+    font-size: 1.6rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .about-links a {
+    font-size: 1rem;
+  }
+
+  .about-photo {
+    width: 160px;
+    height: 160px;
+  }
+}
